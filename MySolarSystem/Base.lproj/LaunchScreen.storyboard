@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlanetQuest_background" highlightedImage="PlanetQuest_background" translatesAutoresizingMaskIntoConstraints="NO" id="Dq0-YH-rt5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-YZ-y0v" userLabel="Top box">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GS-qg-Yg3" userLabel="Bottom box">
+                                <rect key="frame" x="0.0" y="409" width="414" height="327"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faQ-GN-B7X" userLabel="Title box">
+                                <rect key="frame" x="0.0" y="327" width="414" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFt-co-TSX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Planet Quest">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99600780368380448" green="1" blue="0.79081815445977055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="28" name="Menlo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-8k-mbp">
+                                        <rect key="frame" x="80" y="40" width="254" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="QUw-La-kpP"/>
+                                            <constraint firstAttribute="width" constant="254" id="Qdc-wc-h3r"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Your 3D Planetarium experience">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.98187747059467534" green="1" blue="0.097370403800253524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="Menlo-Italic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lFt-co-TSX" firstAttribute="leading" secondItem="faQ-GN-B7X" secondAttribute="leading" id="KUo-TI-SB9"/>
+                                    <constraint firstAttribute="bottom" secondItem="dpA-8k-mbp" secondAttribute="bottom" id="W71-Yg-Qpe"/>
+                                    <constraint firstItem="lFt-co-TSX" firstAttribute="top" secondItem="faQ-GN-B7X" secondAttribute="top" id="ZhX-Cd-vVi"/>
+                                    <constraint firstAttribute="height" constant="82" id="dSr-GY-gjx"/>
+                                    <constraint firstAttribute="trailing" secondItem="lFt-co-TSX" secondAttribute="trailing" id="qVY-Y0-aMP"/>
+                                    <constraint firstItem="dpA-8k-mbp" firstAttribute="centerX" secondItem="faQ-GN-B7X" secondAttribute="centerX" id="xhm-Lc-vpk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4qW-Ev-zZP"/>
+                            <constraint firstItem="Pkd-YZ-y0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6v8-rn-Be2"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="height" secondItem="Pkd-YZ-y0v" secondAttribute="height" id="8Bz-PS-bAB"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="top" secondItem="faQ-GN-B7X" secondAttribute="bottom" id="8yw-B1-IQz"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="top" secondItem="faQ-GN-B7X" secondAttribute="bottom" id="9DO-8B-1GC"/>
+                            <constraint firstItem="Pkd-YZ-y0v" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CCT-D9-Xgx"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="top" secondItem="faQ-GN-B7X" secondAttribute="bottom" id="Cc8-sb-Sie"/>
+                            <constraint firstItem="faQ-GN-B7X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KKh-T7-w4g"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q04-9L-WqZ"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="top" secondItem="faQ-GN-B7X" secondAttribute="bottom" id="QX6-Pj-Fgi"/>
+                            <constraint firstItem="3GS-qg-Yg3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XxX-7a-34L"/>
+                            <constraint firstItem="faQ-GN-B7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dXr-3v-fwy"/>
+                            <constraint firstItem="Pkd-YZ-y0v" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eOh-XW-DXY"/>
+                            <constraint firstItem="faQ-GN-B7X" firstAttribute="top" secondItem="Pkd-YZ-y0v" secondAttribute="bottom" id="lV9-SA-B0c"/>
+                            <constraint firstItem="faQ-GN-B7X" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tR4-qU-yCJ"/>
+                            <constraint firstItem="faQ-GN-B7X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zEK-VS-VZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="372.86356821589209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlanetQuest_background" width="800" height="1000"/>
+    </resources>
+</document>
